@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">  
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            iframe {
+                width: 100%;
+                height: 100%; /* Or height: 100vh; */
+                border: none; /* Optional: removes default border */
+            }
+        </style>
+
 </head>
 
  <body>
-    <div class="embed-container">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQ1zQ7N7p2L2wEeMlz1novZwl6RZ9iq3Pw0GrEEpty2Th28afCt2yXjhDXDf098LoutGLor3mf81IX/pubhtml?gid=1671243765&single=true" frameborder="0" allowfullscreen></iframe>
-    <!-- Or use <embed src="your-webpage-url.html"> if preferred, but <iframe> is generally more versatile for embedding webpages. -->
-    </div> 
+
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQ1zQ7N7p2L2wEeMlz1novZwl6RZ9iq3Pw0GrEEpty2Th28afCt2yXjhDXDf098LoutGLor3mf81IX/pubhtml?gid=1671243765&single=true"></iframe>
+    
     </body>
     </html>
